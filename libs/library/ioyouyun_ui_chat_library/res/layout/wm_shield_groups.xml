@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wm_s_bg_color">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wm_topbar_bg"
+        android:id="@+id/topBar" >
+		<Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wm_topbar_option_bg"
+            android:text="@string/wm_back" 
+            android:textColor="@drawable/wm_back_txt"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/wm_back"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/wm_shield_groups"
+            android:textColor="@color/wm_title_color"
+            android:gravity="center"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/conversationList"
+        android:layout_below="@id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/wm_conversation_split"
+        android:cacheColorHint="#00000000"
+        android:scrollingCache="false"
+        android:animationCache="false"
+        android:fadingEdge="none" />
+</RelativeLayout>

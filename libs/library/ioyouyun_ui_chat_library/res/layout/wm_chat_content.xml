@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ioyouyun.ui.chat.view.MyTouchRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/wm_s_bg_color" >
+
+    <RelativeLayout
+        android:id="@+id/member_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/talk_bg_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wm_chat_bg_720" />
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/wm_white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wm_s_n_chat_bottom_nav_bg"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <RelativeLayout
+                    android:id="@+id/bottom_bar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:id="@+id/type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/wm_s_n_chat_bottom_btn_text"
+                        android:background="@android:color/transparent"
+                        android:visibility="invisible" />
+
+                    <ImageButton
+                        android:id="@+id/talk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/wm_s_n_chat_bottom_btn_speech"
+                        android:background="@android:color/transparent"
+                        android:visibility="visible" />
+
+                    <ImageButton
+                        android:id="@+id/add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="4dp"
+                        android:layout_toRightOf="@id/type"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/wm_s_n_chat_bottom_btn_add" />
+
+                    <EditText
+                        android:id="@+id/press_talk"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="4dp"
+                        android:layout_toRightOf="@id/add"
+                        android:background="@drawable/wm_s_n_chat_bottom_input_bg"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:text="@string/wm_press_talk"
+                        android:textColor="#8f8c92"
+                        android:textSize="17sp"
+                        android:visibility="invisible" 
+                        android:editable="false"/>
+
+                    <RelativeLayout
+                        android:id="@+id/txt_input_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_toRightOf="@id/add"
+                        android:visibility="visible" >
+
+                        <Button
+                            android:id="@+id/sendBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="37dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:background="@drawable/wm_s_n_chat_bottom_btn_send"
+                            android:text="@string/wm_send"
+                            android:textColor="@drawable/wm_send_text_color"
+                            android:textSize="17sp" />
+
+                        <EditText
+                            android:id="@+id/text_input"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="4dp"
+                            android:layout_toLeftOf="@id/sendBtn"
+                            android:background="@drawable/wm_s_n_chat_bottom_input_bg"
+                            android:inputType="textMultiLine"
+                            android:maxLines="3"
+                            android:padding="5dp"
+                            android:textColor="#000000"
+                            android:textCursorDrawable="@null"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/addition_opreates"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/wm_bottom_bg_1_6"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/addition_opreates_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal" />
+
+                <com.ioyouyun.ui.chat.view.NestedViewPager
+                    android:id="@+id/addition_opreates_vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/addition_opreates_point" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/expression_view"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:visibility="gone" >
+
+                <com.ioyouyun.ui.chat.view.NestedHorizontalScrollView
+                    android:id="@+id/exp_btn_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/wm_expression_bg"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageButton
+                            android:id="@+id/weimi_exp_btn"
+                            android:layout_width="70dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/wm_expression_bg"
+                            android:src="@drawable/wm_weimi_expression" />
+
+                        <ImageButton
+                            android:id="@+id/emoji_exp_btn"
+                            android:layout_width="70dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/wm_expression_bg"
+                            android:src="@drawable/wm_emoji_expression" />
+                    </LinearLayout>
+                </com.ioyouyun.ui.chat.view.NestedHorizontalScrollView>
+
+                <FrameLayout
+                    android:id="@+id/expEmoji"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/exp_btn_layout"
+                    android:background="@color/wm_expression_bg_1_7"
+                    android:padding="10dp"
+                    android:visibility="visible" >
+
+                    <com.ioyouyun.ui.chat.view.NestedViewPager
+                        android:id="@+id/expEmojiViewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp" />
+
+                    <LinearLayout
+                        android:id="@+id/expEmojiViewPagerPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:orientation="horizontal" />
+                </FrameLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/msg_list_refresh"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/bottom"
+            android:fadingEdge="none"
+            ptr:ptrHeaderTextColor="@color/wm_text_color2"
+            ptr:ptrMode="pullFromStart"
+            ptr:ptrOverScroll="false"
+            ptr:ptrShowIndicator="false" />
+
+        <LinearLayout
+            android:id="@+id/other_chat_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A0323232"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/other_chat_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/chat_audio_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            layout="@layout/wm_chat_audio_record"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/audio_too_short"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/wm_s_chat_volume_bg3"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="3dp"
+                android:padding="3dp"
+                android:text="@string/wm_audio_too_short2"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/members_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/wm_s_chat_top_dropdown_bg"
+            android:paddingLeft="8dp"
+            android:paddingTop="6dp"
+            android:visibility="invisible" >
+
+            <com.ioyouyun.ui.chat.view.HorizontalListView
+                android:id="@+id/member_list"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gchat_noti"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wm_chat_notify"
+            android:gravity="center"
+            android:text="@string/wm_first_gchat_noti"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/add_fri_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/wm_chat_add_fri_bg"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/add_fri_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/wm_click_add_friend"
+                android:textColor="#44474c"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="7dp"
+                android:layout_toLeftOf="@id/add_fri_txt"
+                android:src="@drawable/wm_chat_add_fri_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/stranger_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/wm_group_talk_stranger_logo" />
+    </FrameLayout>
+
+</com.ioyouyun.ui.chat.view.MyTouchRelativeLayout>

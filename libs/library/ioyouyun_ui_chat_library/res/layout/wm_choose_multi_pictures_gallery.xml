@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.ioyouyun.ui.chat.view.FixedViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:background="@color/wm_black"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent">
+
+
+</com.ioyouyun.ui.chat.view.FixedViewPager>

@@ -1,0 +1,39 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="wm_chat_common_style" mce_bogus="1">
+        <item name="android:windowNoTitle">true</item>
+     </style>
+     
+    <style name="ExpressionDownloadProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">15.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/wm_expression_download_progressbar</item>
+        <item name="android:progressDrawable">@drawable/wm_expression_download_progressbar</item>
+        <item name="android:minHeight">10.0dip</item>
+        <item name="android:isIndicator">false</item>
+    </style>
+    
+    <style name="wm_WhisperProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">15.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/wm_whisper_progressbar</item>
+        <item name="android:progressDrawable">@drawable/wm_whisper_progressbar</item>
+        <item name="android:minHeight">10.0dip</item>
+        <item name="android:isIndicator">false</item>
+    </style>
+</resources>

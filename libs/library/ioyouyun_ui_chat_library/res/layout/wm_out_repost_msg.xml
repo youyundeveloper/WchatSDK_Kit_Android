@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp" >
+
+            <ImageView
+                android:id="@+id/avatar_line_top"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/wm_s_chat_user_line2"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/avatar_line_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/avatar_line_top"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/wm_s_chat_user_line2"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/avatar_layout"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/avatar_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/wm_s_chat_user_point"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:padding="3dp"
+                android:scaleType="centerCrop"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/name_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/avatar_layout" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/wm_s_text_color2"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/repost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_layout"
+            android:layout_toLeftOf="@id/avatar_layout"
+            android:background="@drawable/wm_chat_card_right_bg"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="@string/wm_share_from"
+                android:textColor="#b3b3b3"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/repost_devide_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/wm_chat_card_devide_line" />
+            
+            <ImageView
+                android:id="@+id/repost_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:layout_below="@id/repost_devide_line" />
+
+            <ImageView
+                android:id="@+id/card_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/wm_member_arrow_1_5"
+                android:layout_below="@id/repost_devide_line" />
+            
+            <TextView
+                android:id="@+id/repost_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:textColor="@color/wm_black"
+                android:textSize="16sp"
+                android:layout_toLeftOf="@id/card_arrow"
+                android:layout_toRightOf="@id/repost_img"
+                android:layout_below="@id/repost_devide_line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"  />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/fail_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/repost"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/repost"
+            android:background="@drawable/wm_s_group_icon_warning"
+            android:visibility="gone" />
+        <ProgressBar
+	        android:id="@+id/sending"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	 		android:layout_alignTop="@id/repost"
+	        android:layout_toLeftOf="@id/repost"
+	        style="@android:style/Widget.ProgressBar.Small"
+	        android:layout_marginRight="5dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

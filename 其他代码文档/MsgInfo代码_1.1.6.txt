@@ -1,0 +1,215 @@
+package com.ioyouyun.ui.chat.bean;
+
+import java.util.UUID;
+
+public class MsgInfo extends MsgInfoParent {
+
+	private String msg_id;								//消息id
+	private String from_id;								//发送人id
+	private String to_id;								//接收人id
+	private int msg_type;								//消息类型
+	private String subType;								//消息子类型
+	private String msg;									//消息体
+	private String extra;								//语音消息存语音长度
+	private String timestamp;							//消息时间
+	private int send_status;							//发送状态
+	private String owner;								//拥有人
+	private int processed;								//(暂时无用)
+	private String thumbnailPath;						//图片缩略图
+	private String audio_readtime;						//语音消息读取时间
+	private boolean isAudioPlaying;						//语音是否在播放
+	private String extendMsg;							//扩展字段
+	private int picPraised = PIC_PRAISED_DEFAULT;		//(暂时无用)
+	private long readTime;								//(暂时无用)
+	private String messageIden;							//消息接收排重用到
+	private int flag;									//拉去历史消息判断用到
+	private boolean isHistory = false;					//是否历史消息
+	private String serverMsgId;							//消息服务器记录id
+	private long orderNum = ORDER_NUM_DEFAULT;			//消息排序用到
+
+	public String getMsg_id() {
+		return msg_id;
+	}
+
+	public void setMsg_id(String msg_id) {
+		this.msg_id = msg_id;
+	}
+
+	public String getFrom_id() {
+		return from_id;
+	}
+
+	public void setFrom_id(String from_id) {
+		this.from_id = from_id;
+	}
+
+	public String getTo_id() {
+		return to_id;
+	}
+
+	public void setTo_id(String to_id) {
+		this.to_id = to_id;
+	}
+
+	public int getMsg_type() {
+		return msg_type;
+	}
+
+	public void setMsg_type(int msg_type) {
+		this.msg_type = msg_type;
+	}
+
+	public String getSubType() {
+		return subType;
+	}
+
+	public void setSubType(String subType) {
+		this.subType = subType;
+	}
+
+	public String getMsg() {
+		return msg;
+	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+
+	public String getExtra() {
+		return extra;
+	}
+
+	public void setExtra(String extra) {
+		this.extra = extra;
+	}
+
+	public String getTimestamp() {
+		return timestamp;
+	}
+
+	public void setTimestamp(String timestamp) {
+		this.timestamp = timestamp;
+	}
+
+	public int getSend_status() {
+		return send_status;
+	}
+
+	public void setSend_status(int send_status) {
+		this.send_status = send_status;
+	}
+
+	public String getOwner() {
+		return owner;
+	}
+
+	public void setOwner(String owner) {
+		this.owner = owner;
+	}
+
+	public int getProcessed() {
+		return processed;
+	}
+
+	public void setProcessed(int processed) {
+		this.processed = processed;
+	}
+
+	public String getThumbnailPath() {
+		return thumbnailPath;
+	}
+
+	public void setThumbnailPath(String thumbnailPath) {
+		this.thumbnailPath = thumbnailPath;
+	}
+
+	public String getAudio_readtime() {
+		return audio_readtime;
+	}
+
+	public void setAudio_readtime(String audio_readtime) {
+		this.audio_readtime = audio_readtime;
+	}
+
+	public boolean isAudioPlaying() {
+		return isAudioPlaying;
+	}
+
+	public void setAudioPlaying(boolean isAudioPlaying) {
+		this.isAudioPlaying = isAudioPlaying;
+	}
+
+	public String getExtendMsg() {
+		return extendMsg;
+	}
+
+	public void setExtendMsg(String extendMsg) {
+		this.extendMsg = extendMsg;
+	}
+
+	public int getPicPraised() {
+		return picPraised;
+	}
+
+	public void setPicPraised(int picPraised) {
+		this.picPraised = picPraised;
+	}
+
+	public long getReadTime() {
+		return readTime;
+	}
+
+	public void setReadTime(long readTime) {
+		this.readTime = readTime;
+	}
+
+	public String getMessageIden() {
+		return messageIden;
+	}
+
+	public void setMessageIden(String messageIden) {
+		this.messageIden = messageIden;
+	}
+
+	public int getFlag() {
+		return flag;
+	}
+
+	public void setFlag(int flag) {
+		this.flag = flag;
+	}
+
+	public boolean isHistory() {
+		return isHistory;
+	}
+
+	public void setHistory(boolean isHistory) {
+		this.isHistory = isHistory;
+	}
+
+	public String getServerMsgId() {
+		return serverMsgId;
+	}
+
+	public void setServerMsgId(String serverMsgId) {
+		this.serverMsgId = serverMsgId;
+	}
+
+	public long getOrderNum() {
+		return orderNum;
+	}
+
+	public void setOrderNum(long orderNum) {
+		this.orderNum = orderNum;
+	}
+
+
+	@Override
+	public boolean equals(Object o) {
+		if (((MsgInfo) this).msg_id.equals(((MsgInfo) o).msg_id)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+}

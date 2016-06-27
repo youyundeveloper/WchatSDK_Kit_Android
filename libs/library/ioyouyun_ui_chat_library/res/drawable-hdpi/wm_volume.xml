@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:maxLevel="1" android:drawable="@drawable/wm_vol_1"/>
+    <item android:maxLevel="2" android:drawable="@drawable/wm_vol_2"/>
+    <item android:maxLevel="3" android:drawable="@drawable/wm_vol_3"/>
+    <item android:maxLevel="4" android:drawable="@drawable/wm_vol_4"/>
+    <item android:maxLevel="5" android:drawable="@drawable/wm_vol_5"/>
+    <item android:maxLevel="6" android:drawable="@drawable/wm_vol_6"/>
+    <item android:maxLevel="7" android:drawable="@drawable/wm_vol_7"/>
+    <item android:maxLevel="8" android:drawable="@drawable/wm_vol_8"/>
+    <item android:maxLevel="9" android:drawable="@drawable/wm_vol_9"/>
+    <item android:maxLevel="10" android:drawable="@drawable/wm_vol_10"/>
+    <item android:maxLevel="11" android:drawable="@drawable/wm_vol_11"/>
+    <item android:maxLevel="12" android:drawable="@drawable/wm_vol_12"/>
+
+</level-list>
