@@ -123,7 +123,7 @@ public class Group extends Activity {
 			}
 			
 			@Override
-			public void onResponseHistory(List<HistoryMessage> arg0) {
+			public void onResponseHistory(List arg0) {
 				
 			}
 			
@@ -161,7 +161,7 @@ public class Group extends Activity {
 			}
 			
 			@Override
-			public void onResponseHistory(List<HistoryMessage> paramList) {
+			public void onResponseHistory(List paramList) {
 				
 			}
 			
@@ -205,7 +205,7 @@ public class Group extends Activity {
 			}
 			
 			@Override
-			public void onResponseHistory(List<HistoryMessage> arg0) {
+			public void onResponseHistory(List arg0) {
 				
 			}
 
@@ -278,7 +278,7 @@ public class Group extends Activity {
 					}
 					
 					@Override
-					public void onResponseHistory(List<HistoryMessage> arg0) {
+					public void onResponseHistory(List arg0) {
 						
 					}
 
@@ -351,7 +351,7 @@ public class Group extends Activity {
 					}
 					
 					@Override
-					public void onResponseHistory(List<HistoryMessage> arg0) {
+					public void onResponseHistory(List arg0) {
 						
 					}
 
@@ -387,7 +387,7 @@ public class Group extends Activity {
 			}
 			
 			@Override
-			public void onResponseHistory(List<HistoryMessage> arg0) {
+			public void onResponseHistory(List arg0) {
 				
 			}
 

@@ -97,7 +97,7 @@ public class Black extends Activity {
 			}
 			
 			@Override
-			public void onResponseHistory(List<HistoryMessage> arg0) {
+			public void onResponseHistory(List arg0) {
 				
 			}
 			
@@ -159,7 +159,7 @@ public class Black extends Activity {
 			}
 			
 			@Override
-			public void onResponseHistory(List<HistoryMessage> arg0) {
+			public void onResponseHistory(List arg0) {
 				
 			}
 			
@@ -228,7 +228,7 @@ public class Black extends Activity {
 			}
 			
 			@Override
-			public void onResponseHistory(List<HistoryMessage> arg0) {
+			public void onResponseHistory(List arg0) {
 				
 			}
 			
