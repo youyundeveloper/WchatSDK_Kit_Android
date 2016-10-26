@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/wm_s_bg_color"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wm_v1_7_toolbar_bg_white" >
+
+        <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wm_s_toolbar_bg_transparent"
+                android:text="@string/wm_back" 
+                android:textColor="@drawable/wm_v1_7_blue"
+                android:textSize="@dimen/wm_vice_title"
+                android:drawableLeft="@drawable/wm_v1_7_back_blue"
+                android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="59dp"
+            android:layout_marginRight="59dp"
+            android:singleLine="true"
+            android:text="@string/wm_choose_pictures"
+            android:textColor="@color/wm_title_color"
+            android:textSize="22sp"/>
+
+        <CheckBox
+            android:visibility="invisible"
+            android:id="@+id/check_status"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/wm_choose_multi_pictures_item_checkbox"
+            android:checked="false"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:overScrollMode="never"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wm_v1_7_toolbar_bg_white"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/wm_v1_6_blue_btn"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="@string/wm_add_friend"
+            android:textColor="@color/wm_text_color5"
+            android:textSize="16sp"/>
+
+        <com.ioyouyun.ui.chat.view.HorizontalListView
+            android:id="@+id/user_selected"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@id/add"
+            android:fadingEdge="none"/>
+    </RelativeLayout>
+
+</LinearLayout>

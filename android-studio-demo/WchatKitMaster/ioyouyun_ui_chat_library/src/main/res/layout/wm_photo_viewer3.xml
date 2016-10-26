@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black">
+
+	<com.ioyouyun.ui.chat.view.PhotoViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+	
+	<LinearLayout 
+	    android:id="@+id/point_view"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal|bottom"
+	    android:layout_marginBottom="10dp"
+	    android:orientation="horizontal"/>
+    
+</FrameLayout>

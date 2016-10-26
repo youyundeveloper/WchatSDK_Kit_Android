@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="120dp"
+    android:background="@color/wm_bg_color"
+    android:orientation="vertical" >
+
+     <GridView
+            android:id="@+id/gridview1"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:numColumns="7"
+            android:listSelector="@android:color/transparent"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:verticalSpacing="25dp"
+            android:gravity="center"/>
+     <GridView
+            android:id="@+id/gridview2"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:numColumns="7"
+            android:listSelector="@android:color/transparent"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:gravity="center"
+            android:verticalSpacing="25dp"/>
+     <GridView
+            android:id="@+id/gridview3"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:numColumns="7"
+            android:listSelector="@android:color/transparent"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:gravity="center"
+            android:verticalSpacing="25dp"/>
+     <GridView
+            android:id="@+id/gridview4"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:numColumns="7"
+            android:listSelector="@android:color/transparent"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:gravity="center"
+            android:verticalSpacing="25dp"/>
+     
+     <GridView
+            android:id="@+id/gridview5"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:numColumns="7"
+            android:listSelector="@android:color/transparent"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:gravity="center"
+            android:verticalSpacing="25dp"/>
+     
+     <GridView
+            android:id="@+id/gridview6"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:numColumns="7"
+            android:listSelector="@android:color/transparent"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:gravity="center"
+            android:verticalSpacing="25dp"/>
+     
+     <GridView
+            android:id="@+id/gridview7"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:numColumns="7"
+            android:listSelector="@android:color/transparent"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:gravity="center"
+            android:verticalSpacing="25dp"/>
+     
+     <GridView
+            android:id="@+id/gridview8"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:numColumns="7"
+            android:listSelector="@android:color/transparent"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:gravity="center"
+            android:verticalSpacing="25dp"/>
+
+</LinearLayout>

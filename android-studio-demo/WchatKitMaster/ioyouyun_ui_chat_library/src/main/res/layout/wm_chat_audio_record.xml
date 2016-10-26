@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:id="@+id/stat1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/wm_s_chat_volume_bg"
+        android:visibility="gone">
+        <TextView 
+       	    android:id="@+id/audio_send_hint_cancel"
+       	    android:layout_alignParentBottom="true"
+       	    android:layout_centerHorizontal="true"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:textColor="@android:color/white"
+       	    android:textSize="15sp"
+       	    android:padding="3dp"
+       	    android:text="@string/wm_up_cancel_send"
+       	    android:layout_marginBottom="3dp"/>
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/audio_send_hint_cancel"
+            android:text="0:00"/>
+       	<ImageView
+            android:id="@+id/vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wm_volume"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/count"
+            />
+       	
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/stat2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/wm_s_chat_volume_bg2"
+        android:visibility="gone">
+       	
+        <TextView 
+       	    android:id="@+id/audio_send_hint_release"
+       	    android:layout_alignParentBottom="true"
+       	    android:layout_centerHorizontal="true"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:textColor="@android:color/white"
+       	    android:textSize="15sp"
+       	    android:paddingTop="3dp"
+       	    android:paddingBottom="3dp"
+       	    android:paddingLeft="10dp"
+       	    android:paddingRight="10dp"
+       	    android:background="@drawable/wm_audio_release_cancel_hint_bg"
+       	    android:gravity="center"
+       	    android:text="@string/wm_release_cancel_send"
+       	    android:layout_marginBottom="3dp"/>
+       	
+    </RelativeLayout>
+
+</FrameLayout>

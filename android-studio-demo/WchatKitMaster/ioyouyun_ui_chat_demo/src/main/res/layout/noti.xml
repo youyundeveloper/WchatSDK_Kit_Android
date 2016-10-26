@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/seeNotiTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/see_noti_time"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/set_noti_time_hint" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/notiTimeEt1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/begin_time"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/notiTimeEt2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/end_time"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/setNotiTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/set_noti_time" />
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/closeNoti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/close_noti"
+            android:layout_marginTop="30dp"/>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+	        <ToggleButton
+	            android:id="@+id/groupVibrateTbtn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:checked="false"
+	            android:textOff="@string/group_vibrate_close"
+	            android:textOn="@string/group_vibrate_open" />
+	        
+	        <ToggleButton
+	            android:id="@+id/groupSoundTbtn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:checked="false"
+	            android:textOff="@string/group_sound_close"
+	            android:textOn="@string/group_sound_open" />
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+	        <ToggleButton
+	            android:id="@+id/singleVibrateTbtn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:checked="false"
+	            android:textOff="@string/single_vibrate_close"
+	            android:textOn="@string/single_vibrate_open" />
+	        
+	        <ToggleButton
+	            android:id="@+id/singleSoundTbtn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:checked="false"
+	            android:textOff="@string/single_sound_close"
+	            android:textOn="@string/single_sound_open" />
+            
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

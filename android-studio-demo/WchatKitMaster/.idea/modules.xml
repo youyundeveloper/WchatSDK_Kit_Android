@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WchatKitMaster.iml" filepath="$PROJECT_DIR$/WchatKitMaster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ioyouyun_ui_chat_demo/ioyouyun_ui_chat_demo.iml" filepath="$PROJECT_DIR$/ioyouyun_ui_chat_demo/ioyouyun_ui_chat_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ioyouyun_ui_chat_library/ioyouyun_ui_chat_library.iml" filepath="$PROJECT_DIR$/ioyouyun_ui_chat_library/ioyouyun_ui_chat_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ioyouyun_ui_chat_sdk_jar_opensource/ioyouyun_ui_chat_sdk_jar_opensource.iml" filepath="$PROJECT_DIR$/ioyouyun_ui_chat_sdk_jar_opensource/ioyouyun_ui_chat_sdk_jar_opensource.iml" />
+    </modules>
+  </component>
+</project>

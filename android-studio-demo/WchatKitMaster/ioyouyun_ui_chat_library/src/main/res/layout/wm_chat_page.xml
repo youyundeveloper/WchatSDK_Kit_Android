@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ioyouyun.ui.chat.view.MyGestureRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gesture_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<com.ioyouyun.ui.chat.view.MyTouchRelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:id="@+id/container_all" >
+	    <RelativeLayout
+	        android:id="@+id/top_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/wm_topbar_bg" >
+	        <Button
+	            android:id="@+id/back"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/wm_topbar_option_bg"
+	            android:text="@string/wm_back" 
+	            android:textColor="@drawable/wm_back_txt"
+	            android:textSize="14sp"
+	            android:drawableLeft="@drawable/wm_back"
+	            android:paddingLeft="10dp"
+	            android:layout_alignParentLeft="true"/>
+	        
+	        <TextView
+	            android:id="@+id/member"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:singleLine="true"
+	            android:textColor="@color/wm_title_color"
+           		android:textSize="20sp"
+           		android:drawablePadding="6dp"
+           		android:layout_centerInParent="true"
+           		android:layout_marginLeft="50dp"
+           		android:layout_marginRight="50dp"/>
+	    </RelativeLayout>
+	        
+		<include 
+		    layout="@layout/wm_chat_content"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_below="@id/top_bar"/>
+		<FrameLayout 
+		    android:id="@+id/whisper_show_view"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:visibility="gone">
+		    <ImageView 
+		        android:id="@+id/whisper_pic"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:scaleType="fitCenter"
+		        android:background="#000000"/>
+		    
+		    <Button 
+		        android:id="@+id/whisper_count_down"
+		        android:clickable="false"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/wm_camera_btn_transparent"
+		        android:textSize="14sp"
+		        android:textColor="@android:color/black"
+		        android:layout_gravity="top|right"
+		        android:layout_margin="10dp"/>
+		</FrameLayout>
+		<LinearLayout 
+		    android:id="@+id/blackView"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="#000000"
+		    android:orientation="horizontal"
+		    android:visibility="gone"/>
+	</com.ioyouyun.ui.chat.view.MyTouchRelativeLayout>
+</com.ioyouyun.ui.chat.view.MyGestureRelativeLayout>

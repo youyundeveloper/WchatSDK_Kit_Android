@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@color/wm_s_bg_color">
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wm_topbar_bg">
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wm_topbar_option_bg"
+            android:text="@string/wm_back" 
+            android:textColor="@drawable/wm_back_txt"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/wm_back"
+            android:paddingLeft="10dp"/>
+        <TextView 
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/wm_title_color"
+            android:textSize="20sp"
+            android:text="@string/wm_conversation_title"
+            android:layout_centerInParent="true"/>
+        <ProgressBar  
+		    android:id="@+id/receiving" 
+		    android:layout_width="wrap_content"  
+		    android:layout_height="wrap_content" 
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="10dp" 
+		    android:layout_alignParentRight="true"
+		    style="?android:attr/progressBarStyleSmall" /> 
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/conversationList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/wm_conversation_split"
+        android:cacheColorHint="#00000000"
+        android:scrollingCache="false"
+        android:animationCache="false"
+        android:fadingEdge="none"/>
+
+</LinearLayout>

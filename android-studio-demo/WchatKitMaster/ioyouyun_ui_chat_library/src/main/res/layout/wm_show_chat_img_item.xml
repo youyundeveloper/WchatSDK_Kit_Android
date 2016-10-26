@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    xmlns:gesture-image="http://schemas.polites.com/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/img"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        gesture-image:max-scale="10.0"
+        gesture-image:min-scale="0.75" />
+
+    <TextView
+        android:id="@+id/progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:textColor="@color/wm_s_text_color2"
+        android:visibility="gone" />
+
+    <com.ioyouyun.ui.chat.view.ProgressWheel
+        android:id="@+id/load_progress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        ProgressWheel:barColor="#0097D6"
+        ProgressWheel:barLength="60dp"
+        ProgressWheel:barWidth="5dp"
+        ProgressWheel:rimColor="#330097D6"
+        ProgressWheel:rimWidth="2dp"
+        ProgressWheel:text=""
+        ProgressWheel:textColor="#222"
+        ProgressWheel:textSize="14sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
